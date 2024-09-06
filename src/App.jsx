@@ -10,7 +10,6 @@ import About from './components/About';
 import Contact from './components/Contact';
 
 
-
 function App() {
   useEffect(() => {
     // Scroll to the top of the page on mount
