@@ -10,10 +10,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='bg-gray-900 text-white px-4 md:px-8 lg:px-16 sticky top-0 md:sticky md:top-0 md:z-50 bottom-0 z-50'>
-      <div className='container py-2 flex justify-between items-center'>
-        <div className='text-2xl font-bold hidden md:inline'>Welcome to My Portfolio!</div>
-        <div className='hidden md:flex space-x-6'>
+    <nav className='fixed w-full bg-gray-900 bg-opacity-75 z-10'>
+      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16'>
+        <div className='text-2xl font-bold text-white'>My Portfolio</div>
+        <div className='hidden md:flex space-x-4'>
           <Link to="home" smooth={true} duration={500} className='hover:text-gray-400 cursor-pointer'>Home</Link>
           <Link to="about" smooth={true} duration={500} className='hover:text-gray-400 cursor-pointer'>About</Link>
           <Link to="service" smooth={true} duration={500} className='hover:text-gray-400 cursor-pointer'>Services</Link>
@@ -32,7 +32,7 @@ const Navbar = () => {
         </div>
       </div>
       {isOpen && (
-        <div className='md:hidden'>
+        <div className='md:hidden bg-gray-900 bg-opacity-90'>
           <div className='flex flex-col items-center space-y-4 py-4'>
             <Link to="home" smooth={true} duration={500} className='hover:text-gray-400 cursor-pointer' onClick={toggleMenu}>Home</Link>
             <Link to="about" smooth={true} duration={500} className='hover:text-gray-400 cursor-pointer' onClick={toggleMenu}>About</Link>

@@ -8,18 +8,18 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="text-white h-auto md:h-screen flex items-center justify-center px-4 md:px-8 lg:px-16">
+    <div className="text-white py-16 px-4 md:px-8 lg:px-16">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div className=" order-2 md:order-1 text-center md:text-left">
-          <p className="text-2xl text-gray-500">Welcome to my Portfolio</p>
-          <h1 className="text-3xl mt-4 md:text-4xl font-bold">Hello, I am</h1>
-          <h1 className="text-3xl mt-2 md:text-4xl font-bold">
+        <div className="order-2 md:order-1 text-center md:text-left">
+          <p className="text-xl md:text-2xl text-gray-500">Welcome to my Portfolio</p>
+          <h1 className="text-2xl mt-4 md:text-4xl font-bold">Hello, I am</h1>
+          <h1 className="text-2xl mt-2 md:text-4xl font-bold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
               VAMSI KRISHNA PULA <br />
             </span>
           </h1>
-          <h1 className="text-3xl mt-2 md:text-4xl font-bold">Full-Stack Developer</h1>
-          <p className="mt-4 text-lg leading-relaxed max-w-5xl mx-auto md:mx-0">
+          <h1 className="text-2xl mt-2 md:text-4xl font-bold">Full-Stack Developer</h1>
+          <p className="mt-4 text-base md:text-lg leading-relaxed max-w-5xl mx-auto md:mx-0">
             Crafting Beautiful, Functional Web Applications with Modern Technologies
           </p>
           <div className="mt-8 space-y-4 md:space-y-0 md:space-x-4 flex flex-col md:flex-row justify-center md:justify-start">
@@ -57,7 +57,7 @@ const Hero = () => {
         <img
           src={HeroImage}
           alt="Hero Image"
-          className="order-1 md:order-2 mx-auto w-48 h-48 md:w-80 md:h-80 rounded-full object-cover border-2 border-green-400 transform 
+          className="order-1 md:order-2 mx-auto w-40 h-40 md:w-80 md:h-80 rounded-full object-cover border-2 border-green-400 transform 
           transition-transform duration-300 hover:scale-105 hover:border-4 hover:border-blue-500"
         />
       </div>
