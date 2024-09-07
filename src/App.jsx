@@ -8,7 +8,7 @@ import Skills from './components/Skills';
 import Education from './components/Education';
 import About from './components/About';
 import Contact from './components/Contact';
-
+import Training from './components/Training';
 
 function App() {
   useEffect(() => {
@@ -29,6 +29,7 @@ function App() {
         <Hero />
         <About />
         <Education />
+        <Training />
         <Skills />
         <Service />
         <Projects />
