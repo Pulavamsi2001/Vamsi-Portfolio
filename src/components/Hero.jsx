@@ -8,9 +8,9 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="text-white py-16 px-4 md:px-8 lg:px-16">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div className="order-2 md:order-1 text-center md:text-left">
+    <div className="text-white py-16 px-4 md:px-8 lg:px-16 h-screen">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center h-full">
+        <div className="order-2 md:order-1 text-center md:text-left flex flex-col justify-center">
           <p className="text-xl md:text-2xl text-gray-500">Welcome to my Portfolio</p>
           <h1 className="text-2xl mt-4 md:text-4xl font-bold">Hello, I am</h1>
           <h1 className="text-2xl mt-2 md:text-4xl font-bold">
