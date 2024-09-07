@@ -7,9 +7,9 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="text-white h-auto md:h-screen flex items-center justify-center px-4 md:px-8 lg:px-16">
+    <div className="text-white h-screen flex items-center justify-center px-4 md:px-8 lg:px-16">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div className="order-2 md:order-1 text-center md:text-left">
+        <div className="order-2 md:order-1 flex flex-col justify-center items-center md:items-start text-center md:text-left">
           <h1 className="text-3xl md:text-4xl font-bold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
               VAMSI KRISHNA PULA
