@@ -22,7 +22,6 @@ body {
   background-position: center; /* Center the image */
   filter: blur(1px); /* Apply blur effect */
   z-index: -1; /* Place the pseudo-element behind the content */
-  background-attachment: fixed;
 }
 
 .content-wrapper {
