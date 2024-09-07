@@ -15,7 +15,7 @@ const Hero = () => {
         transition-transform duration-300 hover:scale-105 hover:border-4 hover:border-blue-500'
       />
       <h1 className='text-3xl md:text-4xl font-bold'>
-        I'm{" "}
+        {" "}
         <span className='text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500'>
           VAMSI KRISHNA PULA
         </span>
@@ -23,7 +23,7 @@ const Hero = () => {
       </h1>
 
       <p className='mt-4 text-lg leading-relaxed max-w-5xl mx-auto'>
-        I’m a passionate web developer with hands-on training from Beaseant Technologies. <br /> I specialize in crafting beautiful, functional web applications using modern technologies.
+      Crafting Beautiful, Functional Web Applications with Modern Technologies
       </p>
       <div className='mt-8 space-y-4 md:space-y-0 md:space-x-4 flex flex-col md:flex-row justify-center'>
         <button
