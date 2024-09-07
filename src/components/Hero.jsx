@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { FaFacebook, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import HeroImage from "../assets/hero-image.png"; // Ensure this path is correct
 
 const Hero = () => {
@@ -7,9 +8,9 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="text-white h-screen flex items-center justify-center px-4 md:px-8 lg:px-16">
+    <div className="text-white h-auto md:h-screen flex items-center justify-center px-4 md:px-8 lg:px-16">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div className="order-2 md:order-1 flex flex-col justify-center items-center md:items-start text-center md:text-left">
+        <div className="order-2 md:order-1 text-center md:text-left">
           <h1 className="text-3xl md:text-4xl font-bold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
               VAMSI KRISHNA PULA
@@ -35,6 +36,20 @@ const Hero = () => {
             >
               Contact With Me
             </button>
+          </div>
+          <div className="mt-8 flex justify-center md:justify-start space-x-4">
+            <a href="https://www.facebook.com/pulavamsi2001?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transform transition-transform duration-300 hover:scale-110">
+              <FaFacebook size={30} />
+            </a>
+            <a href="#" className="text-gray-400 hover:text-white transform transition-transform duration-300 hover:scale-110">
+              <FaTwitter size={30} />
+            </a>
+            <a href="https://www.linkedin.com/in/vamsi-pula-238246259/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transform transition-transform duration-300 hover:scale-110">
+              <FaLinkedin size={30} />
+            </a>
+            <a href="#" className="text-gray-400 hover:text-white transform transition-transform duration-300 hover:scale-110">
+              <FaGithub size={30} />
+            </a>
           </div>
         </div>
         <img
