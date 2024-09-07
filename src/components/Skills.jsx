@@ -119,7 +119,7 @@ const SkillsSubsection = ({ title, skills }) => (
           </label>
           <div className="w-full sm:w-9/12 bg-gray-300 rounded-full h-2.5 dark:bg-gray-700">
             <div
-              className={`bg-blue-600 h-2.5 rounded-full skill-bar ${skill.width}`}
+              className={`bg-green-500 h-2.5 rounded-full skill-bar ${skill.width}`}
               style={{ width: "0%" }}
             ></div>
           </div>
