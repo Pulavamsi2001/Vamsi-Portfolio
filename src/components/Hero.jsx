@@ -10,9 +10,9 @@ const Hero = () => {
     <div className=' text-white text-center py-16 px-4 md:px-8 lg:px-16'>
       <img
         src={HeroImage}
-        alt=""
-        className='mx-auto mb-8 w-48 h-48 md:w-64 md:h-64 rounded-full object-cover transform 
-        transition-transform duration-300 hover:scale-105 hover:border-4 hover:border-green-400'
+        alt="Hero Image"
+        className='mx-auto mb-8 w-48 h-48 md:w-64 md:h-64 rounded-full object-cover border-2 border-green-400 transform 
+        transition-transform duration-300 hover:scale-105 hover:border-4 hover:border-blue-500'
       />
       <h1 className='text-3xl md:text-4xl font-bold'>
         I'm{" "}
@@ -27,16 +27,22 @@ const Hero = () => {
       </p>
       <div className='mt-8 space-y-4 md:space-y-0 md:space-x-4 flex flex-col md:flex-row justify-center'>
         <button
-          className='bg-gradient-to-r from-green-400 to-blue-500 text-white
-          transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full'
-        >
-          Contact With Me
-        </button>
-        <button
-        className='bg-gradient-to-r from-blue-500 to-green-500 text-white
-        transform transition-transform duration-300 hover:scale-110 hover:shadow-lg px-6 py-3 rounded-lg'>
+        className='bg-gradient-to-r from-green-400 to-blue-500 text-white font-semibold
+        transform transition-transform duration-300 hover:text-blue-900 hover:scale-110 hover:shadow-lg px-6 py-3 rounded-full'>
          My Resume
        </button>
+
+       <a 
+          href="path/to/your/resume.pdf" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className='bg-gradient-to-r from-blue-900 to-green-900 text-white
+          transform transition-transform duration-300 hover:scale-110 hover:shadow-lg px-6 py-3 rounded-full text-center'
+        >
+          My Resume
+        </a>
+  
+
       </div>
     </div>
   );

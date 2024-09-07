@@ -1,61 +1,50 @@
 import React from "react";
 
+// Array of service objects, each containing an id, title, and description
 const services = [
   {
     id: 1,
-    title: "Web Design",
-    description: "Creating visually appealing and user-friendly web designs.",
-  },
-  {
-    id: 2,
     title: "Frontend Development",
     description: "Building responsive and interactive user interfaces.",
   },
   {
-    id: 3,
+    id: 2,
     title: "Backend Development",
     description: "Developing robust server-side logic and databases.",
   },
   {
-    id: 4,
+    id: 3,
     title: "Full-Stack Development",
     description: "Combining both frontend and backend development skills.",
   },
   {
-    id: 5,
+    id: 4,
     title: "Data Base Development",
     description: "Proficient in SQL, PL/SQL, Oracle, PostgreSQL, MySQL, and MongoDB, making you highly suitable for a Database Developer role.",
   },
-  {
-    id: 6,
-    title: "Digital Marketing",
-    description: "Promote your business with our digital marketing team.",
-  },
 ];
+
+// Functional component to display the services
 const Service = () => {
   return (
-    <div className=" text-white py-20" id="service">
+    <div className="text-white py-20" id="service">
+      {/* Container for the services section */}
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
+        {/* Section title */}
         <h2 className="text-4xl font-bold text-center mb-12">My Services</h2>
+        {/* Grid layout for the service cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Map through the services array and render each service */}
           {services.map((service) => (
             <div
               key={service.id}
               className="bg-gray-800 px-6 pb-6 rounded-lg hover:shadow-lg transform 
               transition-transform duration-300 hover:scale-105"
             >
-              <div
-                className="text-right text-2xl font-bold text-transparent bg-clip-text 
-              bg-gradient-to-r from-green-600 to-blue-400"
-              >
-                {service.id}
-              </div>
-              <h3 className="mt-2 text-2xl font-bold text-transparent bg-clip-text 
-              bg-gradient-to-r from-green-400 to-blue-500">
-                {service.title}
-              </h3>
-              <p className="mt-2 text-gray-300">{service.description}</p>
-              <a href="#" className="mt-4 inline-block text-green-400 hover:text-blue-500">Read More</a>
+              {/* Service title */}
+              <h3 className="text-2xl font-semibold mb-4">{service.title}</h3>
+              {/* Service description */}
+              <p>{service.description}</p>
             </div>
           ))}
         </div>

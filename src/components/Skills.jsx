@@ -72,7 +72,7 @@ const developmentTools = {
       title: "Code Editors",
       skills: [
         { name: "Visual Studio Code", width: "w-10/12" },
-        { name: "Toad", width: "w-6/12" },
+        { name: "Toad", width: "w-8/12" },
         { name: "SQL Developer", width: "w-7/12" },
       ],
     },
