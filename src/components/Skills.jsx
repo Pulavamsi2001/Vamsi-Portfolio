@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 const frontEndDevelopment = {
   title: "Front-End Development",
@@ -119,7 +119,8 @@ const SkillsSubsection = ({ title, skills }) => (
           </label>
           <div className="w-full sm:w-9/12 bg-gray-300 rounded-full h-2.5 dark:bg-gray-700">
             <div
-              className={`bg-blue-600 h-2.5 rounded-full ${skill.width}`}
+              className={`bg-blue-600 h-2.5 rounded-full skill-bar ${skill.width}`}
+              style={{ width: "0%" }}
             ></div>
           </div>
         </div>
@@ -128,14 +129,57 @@ const SkillsSubsection = ({ title, skills }) => (
   </div>
 );
 
-const SkillsSection = ({ title, subcategories }) => (
-  <div className="mb-8 p-6 border border-gray-600 rounded-lg hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out bg-gray-800 bg-opacity-70 will-change-transform">
-    <h2 className="text-2xl font-semibold pb-4">{title}</h2>
-    {subcategories.map((sub, index) => (
-      <SkillsSubsection key={index} title={sub.title} skills={sub.skills} />
-    ))}
-  </div>
-);
+const SkillsSection = ({ title, subcategories }) => {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.querySelectorAll(".skill-bar").forEach((bar) => {
+              bar.style.width = bar.classList.contains("w-10/12")
+                ? "83.33%"
+                : bar.classList.contains("w-9/12")
+                ? "75%"
+                : bar.classList.contains("w-8/12")
+                ? "66.67%"
+                : bar.classList.contains("w-7/12")
+                ? "58.33%"
+                : bar.classList.contains("w-11/12")
+                ? "91.67%"
+                : "0%";
+              bar.classList.add("transition-all", "duration-2000", "ease-in-out");
+            });
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
+  return (
+    <div
+      ref={sectionRef}
+      className="mb-8 p-6 border border-gray-600 rounded-lg hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out bg-gray-800 bg-opacity-70 will-change-transform"
+    >
+      <h2 className="text-2xl font-semibold pb-4">{title}</h2>
+      {subcategories.map((sub, index) => (
+        <SkillsSubsection key={index} title={sub.title} skills={sub.skills} />
+      ))}
+    </div>
+  );
+};
 
 const Skills = () => {
   return (
