@@ -19,7 +19,7 @@ const services = [
   },
   {
     id: 4,
-    title: "Data Base Development",
+    title: "Database Development",
     description: "Proficient in SQL, PL/SQL, Oracle, PostgreSQL, MySQL, and MongoDB, making you highly suitable for a Database Developer role.",
   },
 ];
@@ -38,13 +38,14 @@ const Service = () => {
           {services.map((service) => (
             <div
               key={service.id}
-              className="bg-gray-800 px-6 pb-6 rounded-lg hover:shadow-lg transform 
-              transition-transform duration-300 hover:scale-105"
+              className="bg-gradient-to-r from-gray-700 via-gray-900 to-black p-6 rounded-lg shadow-lg hover:shadow-2xl transform transition-transform duration-300 hover:scale-105"
             >
               {/* Service title */}
-              <h3 className="text-2xl font-semibold mb-4">{service.title}</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
+                {service.title}
+              </h3>
               {/* Service description */}
-              <p>{service.description}</p>
+              <p className="text-gray-300">{service.description}</p>
             </div>
           ))}
         </div>
