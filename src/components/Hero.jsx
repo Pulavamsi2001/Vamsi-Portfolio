@@ -21,13 +21,13 @@ const Hero = () => {
       <div className="text-center md:text-left flex flex-col justify-center">
         <p className="text-lg md:text-xl lg:text-2xl text-gray-500">Welcome to my Portfolio</p>
         <h1 className="text-3xl mt-4 md:text-4xl lg:text-5xl font-bold">Hello, I am</h1>
-        <h1 className="text-3xl mt-2 md:text-4xl lg:text-5xl font-bold">
+        <h1 className="text-3xl md:mt-4 md:text-4xl lg:text-5xl font-bold">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
             VAMSI KRISHNA PULA <br />
           </span>
         </h1>
-        <h1 className="text-3xl mt-2 md:text-4xl lg:text-5xl font-bold">Full-Stack Developer</h1>
-        <p className="mt-4 text-base md:text-lg lg:text-xl leading-relaxed">
+        <h1 className="text-3xl md:mt-4 md:text-4xl lg:text-5xl font-bold">Full-Stack Developer</h1>
+        <p className="mt-4 text-base text-gray-300 md:text-lg lg:text-xl leading-relaxed">
           Crafting Beautiful, Functional Web Applications with Modern Technologies
         </p>
         <div className="mt-8 flex flex-col md:flex-row items-center md:items-start md:space-x-4 space-y-4 md:space-y-0">
@@ -35,17 +35,21 @@ const Hero = () => {
             href="path/to/your/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gradient-to-r from-green-400 to-blue-500 text-white font-semibold
+            className="bg-gradient-to-r from-green-700 to-blue-500 text-white font-semibold
             transform transition-transform duration-300 hover:text-blue-900 hover:scale-110 hover:shadow-lg px-6 py-3 rounded-full text-center"
           >
-            My Resume
+           View My Resume
           </a>
-          <button
-            className="bg-gradient-to-r from-blue-900 to-green-900 text-white font-semibold
-            transform transition-transform duration-300 hover:scale-110 hover:shadow-lg px-6 py-3 rounded-full"
+          <a
+            href="path/to/your/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gradient-to-r from-green-700 to-blue-500 text-white font-semibold
+            transform transition-transform duration-300 hover:text-blue-900 hover:scale-110 hover:shadow-lg px-6 py-3 rounded-full text-center"
           >
-            Contact With Me
-          </button>
+            Explore My Work
+          </a>
+
         </div>
         <div className="mt-10 flex justify-center md:justify-start space-x-4">
           <a href="https://www.facebook.com/pulavamsi2001?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transform transition-transform duration-300 hover:scale-110">
