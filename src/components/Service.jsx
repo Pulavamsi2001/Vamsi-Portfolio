@@ -24,41 +24,9 @@ const services = [
   },
 ];
 
-// Functional component to display the services
 const Service = () => {
-  const [visibleServices, setVisibleServices] = useState([]);
-  const sectionRef = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            services.forEach((service, index) => {
-              setTimeout(() => {
-                setVisibleServices((prev) => [...prev, service.id]);
-              }, index * 500); // Adjust the delay as needed
-            });
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.1 } // Trigger the observer when 10% of the section is in view
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
-  }, []);
-
   return (
-    <div className="text-white py-20" id="service" ref={sectionRef}>
+    <div className="text-white py-20" id="service">
       {/* Container for the services section */}
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         {/* Section title */}
@@ -69,11 +37,7 @@ const Service = () => {
           {services.map((service) => (
             <div
               key={service.id}
-              className={`bg-gradient-to-r from-gray-700 via-gray-900 to-black p-6 rounded-lg shadow-lg transform transition-all duration-500 ease-in-out ${
-                visibleServices.includes(service.id)
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-10"
-              }`}
+              className="bg-gradient-to-r from-gray-700 via-gray-900 to-black p-6 rounded-lg shadow-lg"
             >
               {/* Service title */}
               <h3 className="text-2xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
