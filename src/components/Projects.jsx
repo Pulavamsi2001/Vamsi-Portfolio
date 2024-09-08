@@ -1,18 +1,18 @@
 import React from "react";
-import employeeMSImage from "../assets/employee-ms.png";
-import bookMSImage from "../assets/admin-dashboard.png";
+import employeeMSImage from "../assets/employee-mss.png";
+import bookMSImage from "../assets/admin-dashboard.jpg";
 
 const projects = [
   {
     id: 1,
-    name: "Employee MS",
+    name: "Realtime Chat App",
     technologies: "MERN Stack",
     image: employeeMSImage,
     github: "https://github.com/YouafKhan1",
   },
   {
     id: 2,
-    name: "Blog App",
+    name: "E-Commerce website",
     technologies: "MERN Stack",
     image: bookMSImage,
     github: "https://github.com/YouafKhan1",

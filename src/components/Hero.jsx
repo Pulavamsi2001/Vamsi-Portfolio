@@ -8,12 +8,12 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="text-white py-8 px-4 md:px-8 lg:px-16 h-screen flex flex-col md:flex-row items-center justify-center">
+    <div className="text-white py-8 px-4 md:px-8 lg:px-16 h-screen flex flex-col md:flex-row items-center justify-center lg:gap-40">
       {/* Image for all screen sizes */}
       <img
         src={HeroImage}
         alt="Hero Image"
-        className="w-40 h-40 md:w-56 md:h-56 lg:w-72 lg:h-72 rounded-full object-cover border-2 border-green-400 mb-8 md:mb-0 md:mr-8 transform 
+        className="w-40 h-40 md:w-56 md:h-56 lg:w-72 lg:h-72 rounded-full object-cover border-2 border-green-400 mb-8 md:mb-0 md:mr-0 lg:mr-8 transform 
         transition-transform duration-300 hover:scale-105 hover:border-4 hover:border-blue-500"
       />
       
