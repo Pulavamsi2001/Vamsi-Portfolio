@@ -1,5 +1,5 @@
 import React from "react";
-import employeeMSImage from "../assets/employee-mss.png";
+import employeeMSImage from "../assets/employee-ms.png";
 import bookMSImage from "../assets/admin-dashboard.jpg";
 
 const projects = [
