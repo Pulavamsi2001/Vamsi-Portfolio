@@ -14,9 +14,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='fixed w-full bg-gray-900 text-white py-4 px-6 z-50'>
+    <nav className='fixed w-full bg-gray-900 text-gray-100 py-4 px-6 z-50'>
       <div className='flex justify-between items-center'>
-        <div className='text-2xl font-bold cursor-pointer' onClick={handleLogoClick}>
+        <div className='text-2xl font-bold cursor-pointer select-none' onClick={handleLogoClick}>
           My Portfolio
         </div>
         <div className='hidden md:flex space-x-6'>
