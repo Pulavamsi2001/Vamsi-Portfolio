@@ -19,8 +19,8 @@ const projects = [
   },
   {
     id: 3,
-    name: "Book MS",
-    technologies: "MERN Stack",
+    name: "Ice Cream Express",     
+    technologies: "ReactJs, TailwindCSS",
     image: employeeMSImage,
     github: "https://github.com/YouafKhan1",
   },

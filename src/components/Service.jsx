@@ -10,17 +10,17 @@ const services = [
   {
     id: 2,
     title: "Backend Development",
-    description: "Developing robust server-side logic and databases.",
+    description: "Creating robust server-side solutions using Node.js, Express.js, and real-time communication with Socket.io.",
   },
   {
     id: 3,
     title: "Full-Stack Development",
-    description: "Combining both frontend and backend development skills.",
+    description: "Delivering complete web solutions by integrating frontend and backend technologies seamlessly.",
   },
   {
     id: 4,
     title: "Database Development",
-    description: "Proficient in SQL, PL/SQL, Oracle, PostgreSQL, MySQL, and MongoDB, making you highly suitable for a Database Developer role.",
+    description: "Designing and managing efficient databases with MySQL, PostgreSQL, Oracle SQL, PL/SQL, and MongoDB.",
   },
 ];
 

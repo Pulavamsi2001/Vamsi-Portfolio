@@ -36,7 +36,7 @@ const Navbar = () => {
     <nav className='fixed w-full bg-gray-900 text-gray-100 py-4 px-6 z-50'>
       <div className='flex justify-between items-center'>
         <div className='text-2xl font-bold cursor-pointer select-none' onClick={handleLogoClick}>
-          <span className='text-green-500'>M</span>y <span className='text-blue-500'>P</span>ortfolio
+          My Portfolio
         </div>
         <div className='hidden md:flex space-x-6'>
           <Link to="hero" smooth={true} duration={500} className='hover:text-gray-400 cursor-pointer transition duration-300'>Home</Link>
