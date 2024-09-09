@@ -125,7 +125,7 @@ const Hero = () => {
           d="M19 9l-7 7-7-7"
         />
       </svg>
-      <p className="text-sm">Scroll Down</p>
+      <p className="text-sm text-gray-800"><center>.</center></p>
     </div>
   </div>
 )}
