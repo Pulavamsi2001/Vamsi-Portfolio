@@ -6,8 +6,7 @@ const frontEndDevelopment = {
     {
       title: "Languages & Frameworks",
       skills: [
-        { name: "HTML", width: "w-10/12" },
-        { name: "CSS", width: "w-10/12" },
+        { name: "HTML / CSS", width: "w-10/12" },
         { name: "JavaScript", width: "w-10/12" },
         { name: "TypeScript", width: "w-8/12" },
         { name: "React JS", width: "w-11/12" },
