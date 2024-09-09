@@ -4,6 +4,7 @@ import HeroImage from "../assets/hero-image.png"; // Ensure this path is correct
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [showScrollIndicator, setShowScrollIndicator] = useState(true);
   const heroRef = useRef(null);
 
   useEffect(() => {
@@ -32,8 +33,24 @@ const Hero = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setShowScrollIndicator(false);
+      } else {
+        setShowScrollIndicator(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div ref={heroRef} className="text-white py-8 px-4 md:px-8 lg:px-16 h-screen flex flex-col md:flex-row items-center justify-center lg:gap-40">
+    <div id="hero" ref={heroRef} className="text-white py-8 px-4 md:px-8 lg:px-16 h-screen flex flex-col md:flex-row items-center justify-center lg:gap-40 relative">
       {/* Image for all screen sizes */}
       <img
         src={HeroImage}
@@ -89,6 +106,18 @@ const Hero = () => {
           </a>
         </div>
       </div>
+
+      {/* Scroll Here Indication */}
+      {showScrollIndicator && (
+        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 md:hidden">
+          <div className="text-gray-400 animate-bounce">
+            <svg className="w-6 h-6 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+            <p className="text-sm">Scroll Down</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
