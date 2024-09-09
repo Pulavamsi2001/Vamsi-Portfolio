@@ -105,9 +105,7 @@ const Hero = () => {
             <FaGithub size={24} />
           </a>
         </div>
-      </div>
-
-      {/* Scroll Here Indication */}
+              {/* Scroll Here Indication */}
       {showScrollIndicator && (
         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 md:hidden">
           <div className="text-gray-400 animate-bounce">
@@ -118,6 +116,9 @@ const Hero = () => {
           </div>
         </div>
       )}
+      </div>
+
+
     </div>
   );
 };
