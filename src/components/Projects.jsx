@@ -1,7 +1,7 @@
 import React from "react";
 import employeeMSImage from "../assets/employee-ms.png";
 import bookMSImage from "../assets/admin-dashboard.png";
-import Doctor from "../assets/Doctor.png";
+import Doctor from "@/assets/Doctor.png";
 
 const projects = [
   {
