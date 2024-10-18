@@ -30,7 +30,7 @@ const projects = [
   },
   {
     id: 4,
-    name: "Weather  App",     
+    name: "Weather App",     
     technologies: "ReactJs, TailwindCSS",
     image: employeeMSImage,
     github: "https://github.com/Pulavamsi2001/Doctor-Appointment-Booking",
@@ -40,7 +40,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className=" text-white py-20" id="project">
+    <div className="text-white py-20" id="project">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         <h2 className="text-4xl font-bold text-center mb-12">My Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -52,13 +52,13 @@ const Projects = () => {
               <h3 className="text-2xl font-bold mb-2">{project.name}</h3>
               <p className="text-gray-400 mb-4">{project.technologies}</p>
 
-              <div className="flex  gap-4">
-              <a href={project.github} className="inline-block bg-gradient-to-r 
-              from-green-400 to-blue-500 text-white px-4 py-2 rounded-full" target="_blank" 
-              rel="noopener noreferrer">GitHub</a>
-              <a href={project.Live} className="inline-block bg-gradient-to-r 
-              from-green-400 to-blue-500 text-white px-4 py-2 rounded-full" target="_blank" 
-              rel="noopener noreferrer ">Live</a>
+              <div className="flex gap-4">
+                <a href={project.github} className="inline-block bg-gradient-to-r 
+                from-green-400 to-blue-500 text-white px-4 py-2 rounded-full" target="_blank" 
+                rel="noopener noreferrer">GitHub</a>
+                <a href={project.Live} className="inline-block bg-gradient-to-r 
+                from-green-400 to-blue-500 text-white px-4 py-2 rounded-full" target="_blank" 
+                rel="noopener noreferrer">Live</a>
               </div>
             </div>
           ))}
