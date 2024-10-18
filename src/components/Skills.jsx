@@ -6,17 +6,17 @@ const frontEndDevelopment = {
     {
       title: "Languages & Frameworks",
       skills: [
-        { name: "HTML / CSS", width: "w-10/12" },
-        { name: "JavaScript", width: "w-10/12" },
-        { name: "TypeScript", width: "w-8/12" },
-        { name: "React JS", width: "w-11/12" },
+        { name: "HTML / CSS", width: "w-11/12" },
+        { name: "JavaScript", width: "w-9/12" },
+        { name: "TypeScript", width: "w-7/12" },
+        { name: "React JS", width: "w-9/12" },
       ],
     },
     {
       title: "Design Frameworks",
       skills: [
-        { name: "Bootstrap", width: "w-9/12" },
-        { name: "Tailwind CSS", width: "w-9/12" },
+        { name: "Bootstrap", width: "w-10/12" },
+        { name: "Tailwind CSS", width: "w-11/12" },
       ],
     },
   ],
@@ -49,16 +49,16 @@ const databaseTechnologies = {
     {
       title: "Relational Databases",
       skills: [
-        { name: "PL/SQL", width: "w-8/12" },
-        { name: "Oracle SQL", width: "w-8/12" },
-        { name: "PostgreSQL", width: "w-7/12" },
-        { name: "MySQL", width: "w-7/12" },
+        { name: "PL/SQL", width: "w-9/12" },
+        { name: "Oracle SQL", width: "w-9/12" },
+        { name: "PostgreSQL", width: "w-8/12" },
+        { name: "MySQL", width: "w-9/12" },
       ],
     },
     {
       title: "NoSQL Databases",
       skills: [
-        { name: "MongoDB", width: "w-7/12" },
+        { name: "MongoDB", width: "w-8/12" },
       ],
     },
   ],
@@ -70,9 +70,9 @@ const developmentTools = {
     {
       title: "Code Editors",
       skills: [
-        { name: "Visual Studio Code", width: "w-10/12" },
-        { name: "Toad", width: "w-8/12" },
-        { name: "SQL Developer", width: "w-7/12" },
+        { name: "Visual Studio Code", width: "w-11/12" },
+        // { name: "Toad", width: "w-8/12" },
+        { name: "SQL Developer", width: "w-8/12" },
       ],
     },
     {
@@ -92,7 +92,7 @@ const deploymentHosting = {
       title: "Platforms",
       skills: [
         { name: "Vercel", width: "w-7/12" },
-        { name: "Firebase", width: "w-7/12" },
+        { name: "Firebase", width: "w-8/12" },
       ],
     },
   ],

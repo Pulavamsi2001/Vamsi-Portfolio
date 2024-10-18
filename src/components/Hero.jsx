@@ -82,7 +82,7 @@ const Hero = () => {
             View My Resume
           </a>
           <a
-            href="path/to/your/resume.pdf"
+            href="https://github.com/Pulavamsi2001?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gradient-to-r from-green-700 to-blue-500 text-white font-semibold
@@ -92,18 +92,21 @@ const Hero = () => {
           </a>
         </div>
         <div className={`mt-10 flex justify-center md:justify-start space-x-4 transition-opacity duration-2000 delay-1200 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-          <a href="https://www.facebook.com/pulavamsi2001?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transform transition-transform duration-300 hover:scale-110">
-            <FaFacebook size={24} />
-          </a>
-          <a href="#" className="text-gray-400 hover:text-white transform transition-transform duration-300 hover:scale-110">
-            <FaInstagram size={24} />
-          </a>
           <a href="https://www.linkedin.com/in/vamsi-pula-238246259/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transform transition-transform duration-300 hover:scale-110">
             <FaLinkedin size={24} />
           </a>
-          <a href="#" className="text-gray-400 hover:text-white transform transition-transform duration-300 hover:scale-110">
+          <a href="https://github.com/Pulavamsi2001" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transform transition-transform duration-300 hover:scale-110">
             <FaGithub size={24} />
           </a>
+
+          <a href="https://www.instagram.com/vamsi_krishna_pula/?hl=en" target="_blank" rel="noopener noreferrer"  className="text-gray-400 hover:text-white transform transition-transform duration-300 hover:scale-110">
+            <FaInstagram size={24} />
+          </a>
+          <a href="https://www.facebook.com/pulavamsi2001?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transform transition-transform duration-300 hover:scale-110">
+            <FaFacebook size={24} />
+          </a>
+
+
         </div>
       </div>
 
