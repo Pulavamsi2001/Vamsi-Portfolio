@@ -31,8 +31,8 @@ function App() {
         <Education />
         <Training />
         <Skills />
-        <Service />
         <Projects />
+        <Service />
         <Contact />
         <Footer />
       </div>

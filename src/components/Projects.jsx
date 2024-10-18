@@ -1,6 +1,7 @@
 import React from "react";
 import employeeMSImage from "../assets/employee-ms.png";
 import bookMSImage from "../assets/admin-dashboard.png";
+import Doctor from "../assets/Doctor.png";
 
 const projects = [
   {
@@ -9,6 +10,7 @@ const projects = [
     technologies: "MERN Stack",
     image: employeeMSImage,
     github: "https://github.com/YouafKhan1",
+    Live: ""
   },
   {
     id: 2,
@@ -16,13 +18,23 @@ const projects = [
     technologies: "MERN Stack",
     image: bookMSImage,
     github: "https://github.com/YouafKhan1",
+    Live: ""
   },
   {
     id: 3,
-    name: "Ice Cream Express",     
+    name: "Doctor Appointment Booking Website",     
+    technologies: "React.js, JSX, Tailwind CSS, JavaScript, HTML",
+    image: Doctor,
+    github: "https://github.com/Pulavamsi2001/Doctor-Appointment-Booking",
+    Live: "https://doctor-appointment-booking-nine.vercel.app/"
+  },
+  {
+    id: 4,
+    name: "Weather  App",     
     technologies: "ReactJs, TailwindCSS",
     image: employeeMSImage,
-    github: "https://github.com/YouafKhan1",
+    github: "https://github.com/Pulavamsi2001/Doctor-Appointment-Booking",
+    Live: "https://doctor-appointment-booking-nine.vercel.app/"
   },
 ];
 
@@ -39,9 +51,15 @@ const Projects = () => {
               w-full h-48 object-cover" />
               <h3 className="text-2xl font-bold mb-2">{project.name}</h3>
               <p className="text-gray-400 mb-4">{project.technologies}</p>
+
+              <div className="flex  gap-4">
               <a href={project.github} className="inline-block bg-gradient-to-r 
               from-green-400 to-blue-500 text-white px-4 py-2 rounded-full" target="_blank" 
               rel="noopener noreferrer">GitHub</a>
+              <a href={project.Live} className="inline-block bg-gradient-to-r 
+              from-green-400 to-blue-500 text-white px-4 py-2 rounded-full" target="_blank" 
+              rel="noopener noreferrer ">Live</a>
+              </div>
             </div>
           ))}
         </div>
