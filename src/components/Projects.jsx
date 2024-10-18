@@ -1,7 +1,7 @@
 import React from "react";
 import employeeMSImage from "../assets/employee-ms.png";
 import bookMSImage from "../assets/admin-dashboard.png";
-import Doctor from "../assets/Doctor.png";
+// import Doctor from "../assets/Doctor.png";
 
 const projects = [
   {
@@ -24,7 +24,7 @@ const projects = [
     id: 3,
     name: "Doctor Appointment Booking Website",     
     technologies: "React.js, JSX, Tailwind CSS, JavaScript, HTML",
-    image: Doctor,
+    image: bookMSImage,
     github: "https://github.com/Pulavamsi2001/Doctor-Appointment-Booking",
     Live: "https://doctor-appointment-booking-nine.vercel.app/"
   },
