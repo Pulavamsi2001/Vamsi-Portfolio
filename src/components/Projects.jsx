@@ -34,7 +34,7 @@ const projects = [
     name: "Weather App",     
     technologies: "ReactJs, TailwindCSS",
     image: weatherImage,
-    github: "https://github.com/Pulavamsi2001/Doctor-Appointment-Booking",
+    github: "https://github.com/YouafKhan1",
     Live: ""
   },
 ];
@@ -57,9 +57,11 @@ const Projects = () => {
                 <a href={project.github} className="inline-block bg-gradient-to-r 
                 from-green-400 to-blue-500 text-white px-4 py-2 rounded-full" target="_blank" 
                 rel="noopener noreferrer">GitHub</a>
-                <a href={project.Live} className="inline-block bg-gradient-to-r 
-                from-green-400 to-blue-500 text-white px-4 py-2 rounded-full" target="_blank" 
-                rel="noopener noreferrer">Live</a>
+                {project.Live && (
+                  <a href={project.Live} className="inline-block bg-gradient-to-r 
+                  from-green-400 to-blue-500 text-white px-4 py-2 rounded-full" target="_blank" 
+                  rel="noopener noreferrer">Live</a>
+                )}
               </div>
             </div>
           ))}
