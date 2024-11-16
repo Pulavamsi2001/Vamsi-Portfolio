@@ -1,6 +1,6 @@
 import React from "react";
 import employeeMSImage from "../assets/employee-ms.png";
-import doctorImage from "../assets/Doctor.png"; // Ensure this path is correct
+import doctorImage from "../assets/doctor.png"; // Ensure this path is correct
 import weatherImage from "../assets/weather.png"; // Ensure this path is correct
 import ecommerce from "../assets/ecommerce.jpg";
 
