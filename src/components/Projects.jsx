@@ -1,7 +1,9 @@
 import React from "react";
 import employeeMSImage from "../assets/employee-ms.png";
 import bookMSImage from "../assets/admin-dashboard.png";
-// import Doctor from "../assets/Doctor.png";
+import doctorImage from "../assets/Doctor.png"; // Ensure this path is correct
+import weatherImage from "../assets/weather.png"; // Ensure this path is correct
+import ecommerce from "../assets/ecommerce.jpg";
 
 const projects = [
   {
@@ -16,7 +18,7 @@ const projects = [
     id: 2,
     name: "E-Commerce website",
     technologies: "MERN Stack",
-    image: bookMSImage,
+    image: ecommerce,
     github: "https://github.com/YouafKhan1",
     Live: ""
   },
@@ -24,7 +26,7 @@ const projects = [
     id: 3,
     name: "Doctor Appointment Booking Website",     
     technologies: "React.js, JSX, Tailwind CSS, JavaScript, HTML",
-    image: bookMSImage,
+    image: doctorImage,
     github: "https://github.com/Pulavamsi2001/Doctor-Appointment-Booking",
     Live: "https://doctor-appointment-booking-nine.vercel.app/"
   },
@@ -32,7 +34,7 @@ const projects = [
     id: 4,
     name: "Weather App",     
     technologies: "ReactJs, TailwindCSS",
-    image: employeeMSImage,
+    image: weatherImage,
     github: "https://github.com/Pulavamsi2001/Doctor-Appointment-Booking",
     Live: "https://doctor-appointment-booking-nine.vercel.app/"
   },
