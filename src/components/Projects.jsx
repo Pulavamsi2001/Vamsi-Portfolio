@@ -1,6 +1,5 @@
 import React from "react";
 import employeeMSImage from "../assets/employee-ms.png";
-import bookMSImage from "../assets/admin-dashboard.png";
 import doctorImage from "../assets/Doctor.png"; // Ensure this path is correct
 import weatherImage from "../assets/weather.png"; // Ensure this path is correct
 import ecommerce from "../assets/ecommerce.jpg";
@@ -36,7 +35,7 @@ const projects = [
     technologies: "ReactJs, TailwindCSS",
     image: weatherImage,
     github: "https://github.com/Pulavamsi2001/Doctor-Appointment-Booking",
-    Live: "https://doctor-appointment-booking-nine.vercel.app/"
+    Live: ""
   },
 ];
 
