@@ -5,12 +5,7 @@ dist-ssr
 *.local
 
 # Include public directory for static assets
-!public/
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.svg
+
 
 # Editor directories and files
 .vscode/*
