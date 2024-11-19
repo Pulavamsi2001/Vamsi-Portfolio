@@ -25,7 +25,7 @@ const projects = [
     id: 3,
     name: "Doctor Appointment Booking Website",     
     technologies: "React.js, JSX, Tailwind CSS, JavaScript, HTML",
-    image: employeeMSImage,// doctorImage,
+    image:  doctorImage,
     github: "https://github.com/Pulavamsi2001/Doctor-Appointment-Booking",
     Live: "https://doctor-appointment-booking-nine.vercel.app/"
   },
