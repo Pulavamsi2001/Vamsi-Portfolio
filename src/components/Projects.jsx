@@ -1,6 +1,6 @@
 import React from "react";
 import employeeMSImage from "../assets/employee-ms.png";
-import doctorImage from "../assets/Doctor.png"; // Ensure this path is correct
+//import doctorImage from "../assets/Doctor.png"; // Ensure this path is correct
 import weatherImage from "../assets/weather.png"; // Ensure this path is correct
 import ecommerce from "../assets/ecommerce.jpg";
 
@@ -25,7 +25,7 @@ const projects = [
     id: 3,
     name: "Doctor Appointment Booking Website",     
     technologies: "React.js, JSX, Tailwind CSS, JavaScript, HTML",
-    image: doctorImage,
+    image: employeeMSImage,// doctorImage,
     github: "https://github.com/Pulavamsi2001/Doctor-Appointment-Booking",
     Live: "https://doctor-appointment-booking-nine.vercel.app/"
   },
