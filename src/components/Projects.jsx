@@ -3,7 +3,7 @@ import employeeMSImage from "../../public/assets/employee-ms.png";
 import doctorImage from "../../public/assets/Doctor.png"; // Ensure this path is correct
 import weatherImage from "../../public/assets/weather.png"; // Ensure this path is correct
 import ecommerce from "../../public/assets/ecommerce.jpg";
-s
+
 const projects = [
   {
     id: 1,

@@ -1,7 +1,13 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-})
+  build: {
+    // Ensure CSS is bundled into a single file and avoid splitting
+    rollupOptions: {
+      output: {
+        // Disable automatic chunking for CSS
+        manualChunks: undefined, // Prevent splitting into multiple CSS files
+      },
+    },
+  },
+});
